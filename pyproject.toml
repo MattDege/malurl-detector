@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maldet"
+version = "0.1.0"
+description = "Malicious URL/Domain detector with lexical features + baseline ML"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.26",
+  "scikit-learn>=1.3",
+  "tldextract>=5.1",
+  "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pre-commit>=3.5",
+  "ruff>=0.5.0",
+]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]

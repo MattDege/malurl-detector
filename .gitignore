@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+
+models/
+!models/.gitkeep
+data/processed/
+!data/processed/.gitkeep

@@ -1,0 +1,6 @@
+url,label
+http://example.com,0
+https://login-secure-account.com/verify?session=abcd,1
+http://paypal.com.security-check.xyz,1
+https://www.wikipedia.org,0
+http://192.168.0.10/admin,1
