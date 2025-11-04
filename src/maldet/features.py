@@ -9,6 +9,7 @@ _PUNCT = re.compile(r"[^A-Za-z0-9]")
 _DIGITS = re.compile(r"\d")
 _HEX = re.compile(r"^[0-9A-Fa-f]+$")
 
+
 def _is_ip(host: str) -> int:
     parts = host.split(".")
     if len(parts) == 4:
@@ -17,6 +18,7 @@ def _is_ip(host: str) -> int:
         except ValueError:
             return 0
     return 0
+
 
 def extract_lexical_features(url: str) -> dict:
     # ensure a scheme so urlparse works
